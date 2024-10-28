@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome CDN -->
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav>
+    <div class="logo">
+        <a>Teerakarn Noiruksa</a>
+    </div>
+    <ul>
+        <li><a href="#home">Welcome</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <!-- <li>
+            <a href="#page1">More <i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown">
+                <li><a href="#page1">Page 1</a></li>
+                <li><a href="#page2">Page 2</a></li>
+            </ul>
+        </li> -->
+        <li><a href="#" id="theme-toggle-link">Change theme</a></li> <!-- Theme toggle link -->
+    </ul>
+</nav>
+
+
+<!-- Home Section -->
+<section id="home" class="hero-section">
+    <div class="hero-content">
+        <img src="images/my picture.jpg" width="225" height="300">
+        <h1>Welcome to My Portfolio</h1>
+        <h3>where creativity takes a lemon tea break!</h3>
+    </div>
+</section>
+
+<!-- About Me Section -->
+<section id="about" class="about-section">
+            <h2>About Me</h2>
+        <div class="about-content">
+            <div class="personal-info">
+                <div>
+                    <h3 class="h3-text">Name Surname : Teerakarn Noiruksa</h3>
+                </div>
+                <div>
+                    <h3>Nickname : Karn</h3>
+                </div>
+                <div>
+                    <h3>Birthday : August 10, 2005 (19 years old)</h3>
+                </div>
+                <div>
+                    <h3>Blood Type : O</h3>
+                </div>
+            </div>
+        </div>
+</section>
+
+
+<section id="skills" class="skills-section">
+    <h2>Skills</h2>
+    <div class="project-grid">
+        <div class="skills-card">
+            <img src="images/C.png" alt="Project 1" width="200" height="200">
+            <h3>C</h3>
+        </div>
+        <div class="skills-card">
+            <img src="images/Java.png" alt="Project 1" width="225" height="200">
+            <h3>Java</h3>
+        </div>
+    </div>
+    <div class="project-grid">
+        <div class="skills-card">
+            <img src="images/Python.png" alt="Project 1" width="200" height="200">
+            <h3>Python</h3>
+        </div>
+        <div class="skills-card">
+            <img src="images/Sketch up.png" alt="Project 1" width="250" height="200">
+            <h3>Sketch up</h3>
+        </div>
+        </div>
+    </div>
+</section>
+<!-- Projects Section -->
+<section id="projects" class="projects-section">
+    <h2>Featured Projects</h2>
+    <div class="project-grid">
+        <div class="project-card">
+            <img src="images/mattormetry cal.png" alt="Project 1">
+            <h3>Web application for calculations matrix, vector and trigonometry</h3>
+        </div>
+        <div class="project-card">
+            <img src="images/Study end of near field.png" alt="Project 2">
+            <h3>Study the end of near field interference by gaussian function series for vibration sensor development</h3>
+        </div>
+    </div>
+</section>
+
+<section id="education" class="page1-section">
+    <h2>Education</h2>
+    <div class="project-grid">
+    <div class="school-card">
+        <img src="images/Mandanarumol.png" alt="Mandanarumol">
+        <h3>Mandanarumol</h3>
+        <p>grade 1 - 6</p>
+        <p>GPAX : 3.75</p>
+    </div>
+    <div class="school-card">
+        <img src="images/Benchamaracharungsarit.png" alt="Benchamaracharungsarit">
+        <h3>Benchamaracharungsarit</h3>
+        <p>grade 7 - 9 , grade 10 - 12</p>
+        <p>GPAX : 3.80 , 3.94</p>
+    </div>
+</div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+    <h2>Contract</h2>
+    <h3>click text below this for copy</h3>
+    <div class="contact-div">
+        <h3>Email: <span class="clickable" onclick="copyToClipboard('teerakarnnoiruksa@gmail.com')">teerakarnnoiruksa@gmail.com</span>
+             <br><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <span class="clickable" onclick="copyToClipboard('teerakarn.noir@mail.kmutt.ac.th')">teerakarn.noir@mail.kmutt.ac.th</span></h3>
+    </div>
+    <div class="contact-div">
+        <h3>Discord: <span class="clickable" onclick="copyToClipboard('_rbkz')">_rbkz</span></h3>
+    </div>
+    <div class="contact-div">
+        <h3>Facebook: <span class="clickable" onclick="copyToClipboard('Teerakarn Noiruksa')">Teerakarn Noiruksa</span></h3>
+    </div>
+    <div class="contact-div">
+        <h3>Tel: <span class="clickable" onclick="copyToClipboard('0655314166')">0655314166</span></h3>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <p>Teerakarn's 2024 Portfolio</p>
+    </footer>
+
+    <script src="script.js"></script> <!-- Link to JS -->
+</body>
+</html>
