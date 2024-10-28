@@ -1,0 +1,483 @@
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* General Styles */
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;  /* Use modern Poppins font */
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;                       /* Use flexbox for layout */
+    justify-content: space-between;     /* Space between items */
+    align-items: center;                /* Center items vertically */
+    padding: 10px 20px;                 /* Add padding to the nav */
+    background-color: #ffffff;          /* สี navbar */
+    position: fixed;                     /* Fix navbar at the top */
+    top: 0;                             /* Position at the top */
+    left: 0;                            /* Align left */
+    right: 0;                           /* Align right */
+    z-index: 1000;                     /* Ensure it stays above other content */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow */
+}
+
+nav .logo a {
+    font-size: 24px;                    /* Logo size */
+    color: rgb(0, 0, 0);           /* สีteerakarn */
+    text-decoration: none;              /* No underline */
+    font-weight: 600;                  /* Bold font */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;                       /* Use flexbox for ul */
+}
+
+nav ul li {
+    position: relative;                 /* Position for dropdown */
+    margin: 0 20px;                     /* Space between links */
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);                      /* สี */
+    text-decoration: none;              /* No underline */
+    font-weight: 500;                  /* Bold font */
+    font-size: 18px;
+    padding: 8px 16px;                 /* Padding around the links */
+    transition: color 0.3s;             /* Smooth hover transition */
+}
+
+nav ul li a:hover {
+    color: #2e866f;                     /* Change text color on hover */
+    border-bottom: 4px solid #2e866f;  /* Underline on hover */
+}
+
+body.dark-mode nav {
+    background-color: #000000;  /* สี navbar darkmode */
+}
+
+body.dark-mode nav .logo a {
+    color: rgb(255, 255, 255);           /* สีteerakarn */
+}
+
+body.dark-mode nav ul li a {
+    color: rgb(255, 255, 255);                      /* สี text*/
+}
+
+body.dark-mode nav ul li a:hover {
+    color: #eea64e;                     /* Change text color on hover */
+    border-bottom: 4px solid #956932;;  /* Underline on hover */
+}
+
+body.dark-mode #theme-toggle-link:hover {
+    background-color: #eea64e   ;   /* Blue hover effect */
+    color: white;                       /* Change text color to white */
+}
+
+/* Styles for the theme toggle link */
+#theme-toggle-link {
+    margin-left: 40px;                  /* Space between Page1 and Toggle Theme */
+    font-weight: 500;                  /* Same weight as other links */
+    padding: 8px 16px;                 /* Same padding */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+#theme-toggle-link:hover {
+    background-color: #41ac90  ;        /* Blue hover effect */
+    color: white;                       /* Change text color to white */
+    border-radius: 8px;                 /* Rounded corners on hover */
+}
+
+.hero-section {
+    background-color: #61a5ff; /* Bright blue background for the hero section */
+    padding: 20px 20px;
+}
+
+body.dark-mode .hero-section {
+    background-color: #06253c; /* Darker blue for the hero section in dark mode */
+    color: white;
+}
+
+.about-section {
+    background-color: #06d6a0;
+    padding: 15px 20px;
+    color: #333;
+    text-align: center;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.h3-text {
+    text-align: left;
+}
+.personal-info {
+    display: inline-block; /* Allow the content to be centered */
+    text-align: left; /* Align text inside personal-info to the left */
+    margin: 0 auto; /* Center the personal-info block */
+    flex-wrap: wrap;
+    font-size: 1rem;
+    color: #000000;
+}
+
+.personal-info div {
+    margin-bottom: 60px;
+    background: #f1f1f1;
+    padding-left: 20px;
+    padding-right: 0px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode .about-section {
+    background-color:#193b27;
+    color: #f1f1f1;
+}
+
+body.dark-mode .personal-info div {
+    background: #000000;
+    color: #f1f1f1;
+}
+
+.skills-section {
+    background-color: #fff761; /* Coral background for the projects section */
+    padding: 70px 20px;
+}
+
+
+body.dark-mode .skills-section {
+    background-color: #444105;  /* Darker background for the about section in dark mode */
+    color: white;
+}
+
+.projects-section {
+    background-color: #ff6f61; /* Coral background for the projects section */
+    padding: 5px 20px;
+}
+
+body.dark-mode .projects-section {
+    background-color: #4f0f07; /* Darker background for the projects section in dark mode */
+    color: white;
+}
+
+.page1-section {
+    background-color: #fba00d; /* Yellow background for Page 1 section */
+    padding: 5px 20px;
+}
+
+body.dark-mode .page1-section {
+    background-color:  #523507;; /* Darker background for Page 1 section in dark mode */
+    color: white;
+}
+
+.contact-section {
+    background-color: #814af1; /* Light green background for the contact section */
+    padding: 5px 20px;
+}
+
+.contact-div {
+    margin-bottom: 60px;
+    background: #f1f1f1;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    border-radius: 8px;
+    width: 50%;
+    max-width: 500px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: inline-block; /* Allow the content to be centered */
+    text-align: left; /* Align text inside personal-info to the left */
+    flex-wrap: wrap;
+    font-size: 1rem;
+    color: #000000;
+}
+
+.contact-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+body.dark-mode .contact-section {
+    background-color: #311072; /* Darker background for the contact section in dark mode */
+    color: white;
+}
+
+body.dark-mode .contact-div {
+    background-color: #000000; /* Darker background for the contact section in dark mode */
+    color: white;
+}
+
+/* Footer */
+.footer-section {
+    background-color: #333; /* Dark background for the footer */
+    color: white; /* Light text for footer */
+}
+
+
+/* Section Styles */
+section {
+    height: 100vh;
+    padding: 100px 50px;  /* Add padding for breathing room */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.hero-section h1 {
+    font-size: 3rem;  /* Large hero title */
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.25rem;  /* Slightly larger for readability */
+    margin-bottom: 40px;
+}
+
+.hero-btn {
+    background-color: #3a86ff;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.hero-btn:hover {
+    background-color: #2a2a2a;  /* Darken on hover */
+}
+
+/* For each section <h2> */
+section h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    padding-left: 10px; /* Adjust this to control closeness to the left edge */
+}
+
+/* Example adjustments for each section */
+.about-section h2,
+.skills-section h2,
+.projects-section h2,
+.page1-section h2,
+.contact-section h2 {
+    padding-left: 10px; /* Reduces padding on the left for each h2 */
+    margin-left: -500;     /* Optional: ensure no margin from the left */
+}
+
+.about-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 1.15rem;
+    max-width: 800px;  /* Limit width for better readability */
+}
+
+.skills-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.skills-section p {
+    font-size: 1.15rem;
+    max-width: 800px;  /* Limit width for better readability */
+}
+
+.project-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;  /* Space between projects */
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.project-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);  /* Shadow for depth */
+    text-align: left;
+    display: flex;  /* Use Flexbox */
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    transition: transform 0.3s;
+}
+
+.project-card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #000000;
+}
+
+.skills-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);  /* Shadow for depth */
+    text-align: left;
+    display: flex;  /* Use Flexbox */
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    transition: transform 0.3s;
+}
+
+.skills-card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.skills-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.skills-card p {
+    font-size: 1rem;
+    color: #000000;
+}
+
+body.dark-mode .project-card p {
+    color: #ffffff;
+}
+.project-card:hover {
+    transform: translateY(-10px);  /* Lift on hover */
+}
+
+.school-card {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);  /* Shadow for depth */
+    justify-content:center; /*ซ้าย-ขวา*/
+    width: 320px;
+    transition: transform 0.3s;
+}
+
+body.dark-mode .project-card {
+    background-color: black;  /* Change to black in dark mode */
+    color: white;  /* Change text color to white in dark mode */
+}
+
+.school-card img {
+    
+    max-width: 100%;
+    border-radius: 8px;
+    
+}
+
+.school-card h3 {
+    
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.school-card p {
+    vertical-align: bottom;
+    font-size: 1rem;
+    color: #555;
+}
+
+.school-card:hover {
+    transform: translateY(-10px);  /* Lift on hover */
+}
+
+/* Dark Mode Styles */
+
+
+.skills-card {
+    background-color: white;  /* Default background */
+    color: #2a2a2a;  /* Default text color */
+  }
+  
+body.dark-mode .skills-card {
+    background-color: black;  /* Change to black in dark mode */
+    color: white;  /* Change text color to white in dark mode */
+}
+
+/* กลับ */
+.school-card {
+  background-color: white;  /* Default background */
+  color: #2a2a2a;  /* Default text color */
+}
+
+body.dark-mode .school-card {
+  background-color: black;  /* Change to black in dark mode */
+  color: white;  /* Change text color to white in dark mode */
+}
+
+body.dark-mode .school-card p{
+    color: white;  /* Change text color to white in dark mode */
+  }
+
+/* Contact Section */
+
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.contact-btn {
+    background-color: #2a2a2a;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-btn:hover {
+    background-color: #3a86ff;  /* Hover effect */
+}
+
+/* Footer */
+.footer-section {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.clickable {
+    cursor: pointer; /* Changes to a hand icon */
+}
