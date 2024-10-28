@@ -1,3 +1,7 @@
+export default function handler(req, res) {
+  res.status(200).send("Hello, World!"); // ค่าที่ส่งกลับต้องเป็นสตริง
+}
+
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(event) {
